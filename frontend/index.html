@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>JARVIS — Voice-first AI for your Mac</title>
+    <meta name="description" content="JARVIS is a voice-first AI assistant that runs on your Mac: talk to it, and it answers in a cloned voice while opening apps, managing files and more." />
+    <meta name="theme-color" content="#ecedf3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#07070b" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta property="og:title" content="JARVIS — Voice-first AI for your Mac" />
+    <meta property="og:description" content="Talk to your Mac. JARVIS listens, thinks with Groq / Mistral / OpenRouter / Ollama, and replies in a cloned voice." />
+    <meta property="og:image" content="/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script>
+      // Apply the saved / preferred theme before first paint to avoid a flash.
+      try {
+        var t = JSON.parse(localStorage.getItem('jarvis.theme') || 'null')
+        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        document.documentElement.dataset.theme = t
+      } catch (e) { document.documentElement.dataset.theme = 'light' }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
