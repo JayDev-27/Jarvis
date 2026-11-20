@@ -461,7 +461,7 @@ function App() {
                 </p>
                 <div className="mt-3 flex gap-2">
                   <button className="pill !h-8 bg-white !text-[11px] text-black" onClick={() => setIsSettingsOpen(true)}>Connection settings</button>
-                  <a className="pill !h-8 border border-white/20 !text-[11px] text-white" href="https://github.com/satiricalguru/Jarvis#-quick-start" target="_blank" rel="noreferrer">Setup guide</a>
+                  <a className="pill !h-8 border border-white/20 !text-[11px] text-white" href="https://github.com/JayDev-27/Jarvis#-quick-start" target="_blank" rel="noreferrer">Setup guide</a>
                 </div>
               </div>
             )}
@@ -597,7 +597,7 @@ function App() {
           </div>
           <div className="mx-auto mt-10 flex max-w-[1600px] flex-col gap-3 px-4 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6">
             <p>Runs locally · Groq · Mistral · OpenRouter · Ollama · Pocket-TTS</p>
-            <a href="https://github.com/satiricalguru/Jarvis" target="_blank" rel="noreferrer" className="underline-offset-4 hover:text-ink hover:underline">Source on GitHub ↗</a>
+            <a href="https://github.com/JayDev-27/Jarvis" target="_blank" rel="noreferrer" className="underline-offset-4 hover:text-ink hover:underline">Source on GitHub ↗</a>
           </div>
         </footer>
       </main>

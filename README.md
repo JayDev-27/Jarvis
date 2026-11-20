@@ -79,7 +79,7 @@ A voice-first AI assistant with a living 3D interface. Hold <kbd>Space</kbd>, sp
 **You'll need:** macOS, Python 3.10+ (`brew install python@3.12`), Node 20+ and Chrome or Edge (for the Web Speech API).
 
 ```bash
-git clone https://github.com/satiricalguru/Jarvis.git
+git clone https://github.com/JayDev-27/Jarvis.git
 ```
 
 ```bash
